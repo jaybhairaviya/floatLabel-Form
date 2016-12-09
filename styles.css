@@ -1,0 +1,78 @@
+body {
+  background-image: url(images/img01.jpg);
+font-family: 'Raleway', sans-serif;
+}
+h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+.container {
+  padding-top: 150px;
+  width: 50%;
+  margin: auto;
+}
+.row {
+  width: 100%;
+  margin-left: -20px;
+  overflow: hidden;
+}
+.form-group {
+  position: relative;
+  float: left;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  width: 50%;
+  box-sizing: border-box;
+}
+input {
+  font-family: 'Josefin Slab', serif;
+  border: none;
+  display: block;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  background: transparent;
+  border-bottom: 5px solid grey;
+  padding: 30px 10px 20px 0px;
+  transition: 1s border-color;
+}
+input[type=submit]{
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  margin: auto;
+  border: none;
+  background: #f1773b;
+  border-radius: 100px;
+  padding: 20px;
+  transition: 0.333s transform;
+}
+input[type=submit]:hover{
+  transform: scale(1.1);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+outline: none;
+}
+label {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  opacity: 1;
+  color: #f1773b;
+  font-size: 15px;
+  transition: 0.555s opacity,0.333s color,1.5s top ease-out;
+}
+.hideLabel label {
+  opacity: 0;
+  top:2px;
+}
+
+.highlightLabel label {
+  color: grey;
+}
+
+.highlightBorder input {
+  border-color: #FF732E;
+}
